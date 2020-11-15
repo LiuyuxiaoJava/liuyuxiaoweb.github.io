@@ -1,0 +1,20 @@
+/* 公共样式表 */
+body {
+	color: #EEEEEE;
+	font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+a{
+    text-decoration: none;
+    /* color: #EEEEEE; */
+}
+.w{
+    width: 1226px;
+    margin: 0 auto;
+}
+/*  */
+.clearfax::before,
+.clearfax::after{
+    content: "";
+    display: table;
+    clear: both;
+}

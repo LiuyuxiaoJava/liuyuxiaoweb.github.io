@@ -1,0 +1,548 @@
+/* 首页样式表 */
+
+/* 顶部导航栏外框架 */
+.top {
+    width: 100%;
+    height: 40px;
+    background-color: #212121;
+}
+
+.top a {
+    color: #eeeeee;
+}
+
+/* .top .topnav {
+    background-color: #212121;
+    height: 40px;
+
+} */
+
+.top .topnav li {
+    float: left;
+    line-height: 40px;
+}
+
+.top .topnav .lefttopnav {
+    float: left;
+}
+
+.top .topnav .righttopnav {
+    float: right;
+}
+
+.top .topnav .line {
+    width: 2px;
+    height: 16px;
+    background-color: #eeeeee;
+    margin: 12px 20px;
+}
+
+.top .topnav .righttopnav li:last-child {
+
+    width: 115px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.top .topnav .righttopnav li:last-child a {
+    display: block;
+}
+
+.top .topnav .righttopnav li:last-child i {
+    margin-right: 5px;
+}
+
+.top .topnav .righttopnav .shoping {
+    /* width: 300px; */
+    height: 100px;
+    width: 0;
+    background-color: gray;
+    position: absolute;
+    right: 0;
+    box-shadow: 0 0 5px #212121;
+    transition: width 0.8s;
+    overflow: hidden;
+    line-height: 100px;
+    z-index: 3;
+    /*shoping3级*/
+}
+
+.top .topnav .righttopnav li:last-child a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: red;
+}
+
+.top .topnav .righttopnav li:last-child:hover .shoping {
+    width: 300px;
+}
+
+/* 顶部导航栏结束 */
+
+/* 导航栏外框架 */
+nav {
+    width: 100%;
+
+    position: relative;
+}
+
+/* 导航栏内容框架 */
+.nav {
+    margin: 0 auto;
+    height: 100px;
+
+
+}
+
+.nav .logo {
+    float: left;
+    height: 55px;
+    width: 55px;
+    background-color: rgb(93, 191, 216);
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav .logo a {
+    display: block;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+
+}
+
+.nav .logo .mi {
+    background-image: url(../img/logo动画/mi-logo.png);
+    background-position: center;
+    float: left;
+    left: 0;
+
+    transition: left 0.9s;
+
+}
+
+.nav .logo .home {
+    background-image: url(../img/logo动画/mi-home.png);
+    background-position: center;
+
+    float: left;
+    left: -55px;
+    transition: left 0.9s;
+}
+
+.nav .logo:hover .mi {
+    left: 55px;
+}
+
+.nav .logo:hover .home {
+    left: 0px;
+}
+
+/* nav导航栏 */
+.nav .navs {
+    float: left;
+    margin-left: 45px;
+    line-height: 100px;
+    /* background-color: darkgray; */
+}
+
+.nav .navs a {
+    font-size: 16px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.nav .navs li {
+    float: left;
+    list-style: none;
+}
+
+.nav .navs .first {
+    visibility: hidden;
+    position: relative;
+    background-color: darkmagenta;
+}
+
+.nav .navs .leftnav {
+    position: absolute;
+    width: 234px;
+    height: 460px;
+    background-color: rgba(0, 0, 0, 0.6);
+  
+    position: absolute;
+    left: -100px;
+    visibility: visible;
+    z-index: 2;
+
+}
+
+.nav .navs .left {
+    margin-top: 15px;
+}
+
+.nav .navs .left a {
+    line-height: 43px;
+    display: block;
+    width: 214px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.nav .navs .left a:hover {
+    background-color: darkgray;
+}
+
+.nav .navs .left i {
+    float: right;
+    line-height: 43px;
+    margin-right: 50px;
+}
+
+.nav .navs > ul >li >a {
+    display: block;
+    padding: 0 15px;
+}
+
+/* mean下拉菜单栏目 */
+.nav .navs .mean {
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: height 0.9s;
+}
+
+/* .nav .navs:hover  .mean{
+    height: 228px;
+    border-top: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .2);
+} */
+
+/* 左侧下拉菜单 */
+.navs .leftnav .leftlist{
+    height: 460px;
+    width: 0;
+    /* width: 600px; */
+    background-color: rgba(146, 145, 145, 0.6);
+    position: absolute;
+    top: 0;
+    left: 234px;
+    transition:width 0.9s;
+    z-index: 9;
+}
+.navs .leftnav:hover .leftlist{
+    width: 600px;
+    box-shadow: 0 0 5px whitesmoke;
+}
+/* 搜索栏目 */
+
+.shoushuo>.from {
+    height: 50px;
+    width: 296px;
+    background-color: darkolivegreen;
+    display: block;
+    /* position: absolute;
+    left: 50%;
+    margin-left: 317px;
+    margin-top: 25px; */
+    float: right;
+    margin-top: 25px;
+}
+
+.from input {
+    height: 50px;
+    width: 241px;
+    padding: 0;
+    border: 1px solid rgb(224, 224, 224);
+    box-sizing: border-box;
+    float: left;
+    text-indent: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+.from button {
+    height: 50px;
+    width: 55px;
+    font-size: 18px;
+    float: left;
+    border: 1px solid rgb(224, 224, 224);
+    border-left: none;
+}
+
+.from input:focus {
+    border-color: tomato;
+}
+
+.from button:hover {
+    background-color: tomato;
+    color: whitesmoke;
+}
+
+/* banner区域 */
+.banner-frame .banner {
+    width: 1226px;
+    height: 460px;
+    background-color: rosybrown;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner-frame .banner img {
+    position: absolute;
+    z-index: 1;
+}
+
+/*轮播按钮 */
+
+.banner-frame .banner .previous {
+    width: 41px;
+    height: 69px;
+    background-image: url(../img/按钮/icon-slides.png);
+    background-position: -84px;
+    position: absolute;
+    z-index: 4;
+    left: 234px;
+    top: 190px;
+}
+
+.banner-frame .banner .next {
+    width: 41px;
+    height: 69px;
+    background-image: url(../img/按钮/icon-slides.png);
+    background-position: -124px;
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    top: 190px;
+}
+
+.banner-frame .banner .previous:hover {
+    background-image: url(../img/按钮/icon-slides.png);
+    background-position: 0;
+}
+
+.banner-frame .banner .next:hover {
+    background-image: url(../img/按钮/icon-slides.png);
+    background-position: -42px;
+}
+
+/* 轮播按钮 */
+.banner-frame .banner .button {
+    width: 120px;
+    height: 10px;
+    /* background-color: teal; */
+    position: absolute;
+    z-index: 4;
+    right: 80px;
+    bottom: 60px;
+}
+
+.banner-frame .banner .button a {
+    width: 8px;
+    height: 8px;
+    background-color: whitesmoke;
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 3px solid darkgray;
+}
+
+.banner-frame .banner .button .active {
+    background-color: dimgrey;
+}
+
+.banner-frame .banner .button a:hover {
+    background-color: dimgrey;
+}
+
+/* banner下面四张图片内容区 */
+.banners-frame .bannerspage {
+    margin-top: 14px;
+
+    height: 170px;
+
+
+    margin-top: 14px;
+}
+
+.banners-frame .bannerspage img {
+    float: left;
+    margin-right: 14px;
+}
+
+.banners-frame .bannerspage li:last-child img {
+    margin-right: 0;
+}
+
+/* 产品 */
+.product {
+    width: 100%;
+    height: 340px;
+    margin-top: 20px;
+    background-color: lightgray;
+}
+
+.product .products h1 {
+    line-height: 58px;
+    font-size: 22px;
+    color: #424242;
+}
+
+.product .products li {
+    float: left;
+    width: 234px;
+    height: 282px;
+    background-color: whitesmoke;
+    margin-right: 14px;
+}
+
+.product .products li:last-child {
+    margin-right: 0px;
+}
+
+.product .products .block {
+    width: 44px;
+    height: 22px;
+    background-color: steelblue;
+    text-align: center;
+}
+
+.product .products li img {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+}
+
+.product .products li p {
+    text-align: center;
+    color: #212121;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product .products li span {
+    display: block;
+    color: cadetblue;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*   特权*/
+.cons {
+    height: 60px;
+    /* background-color: yellow; */
+}
+
+.cons .conss {
+    height: 42px;
+    margin-top: 10px;
+    /* background-color: aqua; */
+}
+
+.cons .conss li {
+    float: left;
+
+}
+
+.cons .conss li a {
+    display: block;
+    /* text-align: center; */
+    width: 306.5px;
+}
+
+.cons .conss li i {
+    color: cornflowerblue;
+    font-size: 28px;
+    margin-left: 30px;
+}
+
+/* footer页脚 */
+footer {
+    width: 100%;
+    height: 408px;
+    background-color: #424242;
+}
+
+.footer {
+    height: 307px;
+    /* background-color: darkolivegreen; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.footer dl {
+    float: left;
+    display: block;
+    margin-top: 60px;
+}
+
+.footer dt {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer dd {
+    margin: 10px 0;
+    margin-right: 90px;
+}
+
+.footer dd>a {
+    color: whitesmoke;
+}
+
+/* 右侧联系客服 */
+.footer .phone {
+    width: 270px;
+    float: right;
+    margin-top: 60px;
+}
+
+.footer .phone p {
+    display: block;
+    text-align: center;
+}
+
+.footer .phone p:first-child {
+    font-size: 30px;
+}
+
+.footer .phone .phonbox a{
+    display: block;
+    width: 120px;
+    height: 28px;
+    border: 1px solid #eeeeee;
+    background-color: rgb(68, 65, 65);
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 28px;
+    color: whitesmoke;
+}
+.footer .phone .phonbox a:hover{
+    background-color:  #eeeeee;
+    color: black;
+}
+/* footer下部分 */
+.footers p{
+    float: left;
+    display: block;
+    margin-top: 20px;
+}
+.footers a{
+    float: left;
+    color: whitesmoke;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+.footers a:hover{
+    color: tomato;
+}
